@@ -8,7 +8,7 @@ public class Main {
         Transport bmw = new Transport();
         bmw.setValues(250.5f,2500,"white",new byte[]{0,0,0});
         String r = bmw.getValues();
-        System.out.println(r);
+        System.out.print(r);
 
         //bmw.speed = 250.5f;
         //bmw.weight = 2500;
@@ -18,8 +18,8 @@ public class Main {
         Transport truck = new Transport();
         truck.speed = 140.5f;
         truck.weight = 5600;
-        bmw.color = "red";
-        bmw.coordinate = new byte[]{100,0,0};
+        truck.color = "red";  
+        truck.coordinate = new byte[]{100,0,0};
 
         String r2 = truck.getValues();
         System.out.println(r2);

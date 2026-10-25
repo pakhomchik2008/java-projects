@@ -14,8 +14,8 @@ public class Transport {
         }
 
         public String getValues(){
-            String info =  "object speed: "+speed+"weight"+weight;
-            String infocoordinates = "cooedinates:\n";
+            String info =  "object speed: "+speed+" weight "+weight + "color "+color;
+            String infocoordinates = "cooedinates: \n";
             for(int i = 0;i<coordinate.length;i++)
             {
                 infocoordinates += coordinate[i]+ "\n";
