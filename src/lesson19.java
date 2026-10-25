@@ -1,31 +1,36 @@
+import java.util.Scanner;
+
+
+
 public class lesson19 {
     
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        Rectangle rectangle = new Rectangle();
+        rectangle.width = sc.nextInt();
+        rectangle.high = sc.nextInt();
+        System.out.println("Area " + rectangle.Area());
+    System.out.println("Perimetr " + rectangle.Perimetr());
 
-        Book Harry = new Book();
-        Harry.setBook("harryP", "gleb", 5);
-        System.out.println(Harry.getBook());
-        Book mcdack = new Book();
+
+        }
+
+
+
+
+    static class Rectangle{
+        int width = 0;
+        int high = 0;
+        
+        int Area(){
+            return width*high;
+        }
+        int Perimetr(){
+            return (width+high)*2;
+        }
+
+
+
     }
 
-
-
-static class Book {   
-    String title;
-    String author;
-    int pages; 
-
-    void setBook(String title,String author,int pages)
-    {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-    }
-    String getBook()
-    {
-        return "name of book = " + title + " \nauthor = " + author + " \npages = " + pages;
-    }
-
-
-}
 }
